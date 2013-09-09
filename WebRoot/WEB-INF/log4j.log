@@ -1,0 +1,354 @@
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2812 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2812
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.218019657E8,latitude=3.18500442E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2812,1.218019657E8,3.18500442E7,'20120620160048',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2708 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2708
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.233530872E8,latitude=4.1773961300000004E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2708,1.233530872E8,4.1773961300000004E7,'20120620160052',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2070 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2070
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.133789771E8,latitude=3.3611013800000004E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2070,1.133789771E8,3.3611013800000004E7,'20120620160059',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2843 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2843
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.20633659E8,latitude=2.79689245E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2843,1.20633659E8,2.79689245E7,'20120620160101',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor2] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2669 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2669
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.132506894E8,latitude=2.31125693E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2669,1.132506894E8,2.31125693E7,'20120620160121',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2671 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2671
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.187559201E8,latitude=3.45289886E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2671,1.187559201E8,3.45289886E7,'20120620160122',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2774 action==9
+[TP-Processor2] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==2774
+[TP-Processor2] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120125' and t.isaccept=1  and l.userid=t.userid and t.observid=2774 order by l.createtime desc) p group by p.userid
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2727 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2727
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.166472224E8,latitude=3.49988998E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2727,1.166472224E8,3.49988998E7,'20120620160128',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==12
+[TP-Processor2] INFO zack.map.logic.DeleteFriend - 用户退出系统:myid==1806
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor2] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor2] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120143' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1968 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1968
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.2336157104000449E8,latitude=4.1829059016890824E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1968,1.2336157104000449E8,4.1829059016890824E7,'20120620160145',0)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1806
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1298764E8,latitude=2.8179738E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1806,1.1298764E8,2.8179738E7,'20120620160149',3)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==11
+[TP-Processor2] INFO zack.map.logic.QueryEventInfo - 查询用户事件:myid==1806
+[TP-Processor2] INFO zack.map.logic.QueryEventInfo - 查询用户事件:QueryEventCode==select sum(t.eventcode) from (select EVENTCODE from eventinfo where userid=1806 and state=1 GROUP BY EVENTCODE) t 
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"eventcode":0,"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2875 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2875
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.138043008E8,latitude=3.47875356E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2875,1.138043008E8,3.47875356E7,'20120620160152',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1768 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1768
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.103320511E8,latitude=4.09091033E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1768,1.103320511E8,4.09091033E7,'20120620160152',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1390 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1390
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.130311662E8,latitude=2.36933243E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1390,1.130311662E8,2.36933243E7,'20120620160201',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor2] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor2] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120202' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1967 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1967
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.20807917E8,latitude=2.80218478E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1967,1.20807917E8,2.80218478E7,'20120620160204',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2148 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2148
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1493351889999999E8,latitude=3.52953279E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2148,1.1493351889999999E8,3.52953279E7,'20120620160209',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==124 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=124
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1456792889999999E8,latitude=3.98338951E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 124,1.1456792889999999E8,3.98338951E7,'20120620160215',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2408 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2408
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.027288254E8,latitude=2.50859587E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2408,1.027288254E8,2.50859587E7,'20120620160223',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2774 action==9
+[TP-Processor2] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==2774
+[TP-Processor2] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120225' and t.isaccept=1  and l.userid=t.userid and t.observid=2774 order by l.createtime desc) p group by p.userid
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2854 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2854
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.116733548E8,latitude=4.07906556E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2854,1.116733548E8,4.07906556E7,'20120620160225',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor2] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2042 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2042
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.222704575E8,latitude=4.35996191E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2042,1.222704575E8,4.35996191E7,'20120620160243',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor2] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2670 action==8
+[TP-Processor2] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2670
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.2139275460000001E8,latitude=3.12380918E7
+[TP-Processor2] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2670,1.2139275460000001E8,3.12380918E7,'20120620160250',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==791 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=791
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.121541299E8,latitude=3.31459106E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 791,1.121541299E8,3.31459106E7,'20120620160250',2)
+[TP-Processor2] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2402 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2402
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=-8.42397486E7,latitude=9974756.799999999
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2402,-8.42397486E7,9974756.799999999,'20120620160253',1)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==699 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=699
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.14409726E8,latitude=3.0490191200000003E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 699,1.14409726E8,3.0490191200000003E7,'20120620160301',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor3] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==11
+[TP-Processor3] INFO zack.map.logic.QueryEventInfo - 查询用户事件:myid==1806
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"eventcode":0,"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2351 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2351
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.134434201E8,latitude=3.4764650099999994E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2351,1.134434201E8,3.4764650099999994E7,'20120620160315',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2841 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2841
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.0640686169999999E8,latitude=2.31403241E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2841,1.0640686169999999E8,2.31403241E7,'20120620160321',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2366 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2366
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.199836289E8,latitude=3.18731407E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2366,1.199836289E8,3.18731407E7,'20120620160321',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==864 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=864
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.065268874E8,latitude=2.95749077E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 864,1.065268874E8,2.95749077E7,'20120620160324',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2774 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==2774
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120325' and t.isaccept=1  and l.userid=t.userid and t.observid=2774 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==11
+[TP-Processor3] INFO zack.map.logic.QueryEventInfo - 查询用户事件:myid==1806
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"eventcode":0,"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2585 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2585
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.129239788E8,latitude=2.8221714299999997E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2585,1.129239788E8,2.8221714299999997E7,'20120620160328',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1871 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1871
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1215477989999999E8,latitude=3.2042640499999996E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1871,1.1215477989999999E8,3.2042640499999996E7,'20120620160331',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1305 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1305
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1477654739999999E8,latitude=3.45503113E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1305,1.1477654739999999E8,3.45503113E7,'20120620160331',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2430 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2430
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.19886421E8,latitude=3.27162926E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2430,1.19886421E8,3.27162926E7,'20120620160334',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120334' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1408 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1408
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.122576935E8,latitude=3.16931987E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1408,1.122576935E8,3.16931987E7,'20120620160340',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==11
+[TP-Processor3] INFO zack.map.logic.QueryEventInfo - 查询用户事件:myid==1806
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"eventcode":0,"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120348' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2847 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2847
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.132878544E8,latitude=3.37501727E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2847,1.132878544E8,3.37501727E7,'20120620160350',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor3] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1602 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1602
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1237954689999999E8,latitude=2.22886924E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1602,1.1237954689999999E8,2.22886924E7,'20120620160355',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor3] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2595 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2595
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1720831560000001E8,latitude=3.90988095E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2595,1.1720831560000001E8,3.90988095E7,'20120620160401',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2445 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2445
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.049388527E8,latitude=2.9175411700000003E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2445,1.049388527E8,2.9175411700000003E7,'20120620160406',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1771 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1771
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.208568858E8,latitude=2.80906032E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1771,1.208568858E8,2.80906032E7,'20120620160408',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1440 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1440
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.2017921389999999E8,latitude=3.02634796E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1440,1.2017921389999999E8,3.02634796E7,'20120620160409',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1607 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1607
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.172059293E8,latitude=3.91154695E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1607,1.172059293E8,3.91154695E7,'20120620160413',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==13
+[TP-Processor3] INFO zack.map.logic.DeleteFriend - 用户留言:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:userid=2
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:leavemessage=我爱你宝贝
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:SQL==update track set leavemessage='我爱你宝贝' where observid=2 and userid=1806 and isaccept=1
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:SQL2==update track set leavemessage=''  where observid=1806 and userid=2 and isaccept=1
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2109 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2109
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.20600573E8,latitude=3.1309501E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2109,1.20600573E8,3.1309501E7,'20120620160423',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2774 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==2774
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120425' and t.isaccept=1  and l.userid=t.userid and t.observid=2774 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1079 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1079
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.144505396E8,latitude=2.3164513E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1079,1.144505396E8,2.3164513E7,'20120620160431',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor3] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2808 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2808
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.089017704E8,latitude=3.42422465E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2808,1.089017704E8,3.42422465E7,'20120620160439',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2141 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2141
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1825926680000001E8,latitude=3.4568983E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2141,1.1825926680000001E8,3.4568983E7,'20120620160445',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120449' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2463 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2463
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.1634477769999999E8,latitude=4.0003836800000004E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2463,1.1634477769999999E8,4.0003836800000004E7,'20120620160459',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==435 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=435
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.128620521E8,latitude=2.31739367E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 435,1.128620521E8,2.31739367E7,'20120620160508',1)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2730 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2730
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.207173874E8,latitude=3.13552761E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2730,1.207173874E8,3.13552761E7,'20120620160508',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2621 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2621
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.06168332E8,latitude=3.30128402E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2621,1.06168332E8,3.30128402E7,'20120620160516',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==13
+[TP-Processor3] INFO zack.map.logic.DeleteFriend - 用户留言:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:userid=2
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:leavemessage=我爱你
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:SQL==update track set leavemessage='我爱你' where observid=2 and userid=1806 and isaccept=1
+[TP-Processor3] DEBUG zack.map.logic.DeleteFriend - 用户留言:SQL2==update track set leavemessage=''  where observid=1806 and userid=2 and isaccept=1
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2774 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==2774
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120524' and t.isaccept=1  and l.userid=t.userid and t.observid=2774 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==755 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=755
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.2012019313812971E8,latitude=3.02788285612258E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 755,1.2012019313812971E8,3.02788285612258E7,'20120620160534',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid== action==8
+[TP-Processor3] INFO zack.map.servlet.MapService - 用户验证错误，不存在用户ID:{"code":0}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2929 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2929
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.238402808E8,latitude=4.22928795E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2929,1.238402808E8,4.22928795E7,'20120620160540',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2006 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2006
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.027184735E8,latitude=2.49837931E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2006,1.027184735E8,2.49837931E7,'20120620160544',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1851 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1851
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.142650957E8,latitude=3.05826602E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1851,1.142650957E8,3.05826602E7,'20120620160544',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2113 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2113
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.3088889739999999E8,latitude=4.52044561E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2113,1.3088889739999999E8,4.52044561E7,'20120620160544',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1806 action==9
+[TP-Processor3] INFO zack.map.logic.QueryGpsData - 获取GPS位置:myid==1806
+[TP-Processor3] DEBUG zack.map.logic.QueryGpsData - 获取GPS位置:select * from (select l.*,t.name,t.icon,t.leavemessage from locate l,track t where l.createtime>'20120620120549' and t.isaccept=1  and l.userid=t.userid and t.observid=1806 order by l.createtime desc) p group by p.userid
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"data":[{"id":"189822","createTime":"20120620154955","icon":"2130837504","name":"小李","userId":"2","leaveMessage":"","longtitude":"112970735","provider":"2","latitude":"28181638"}],"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==2926 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=2926
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.198944798E8,latitude=3.0047243099999998E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 2926,1.198944798E8,3.0047243099999998E7,'20120620160555',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}
+[TP-Processor3] INFO zack.map.servlet.MapService - 服务器收到请求,myid==1173 action==8
+[TP-Processor3] INFO zack.map.logic.SaveGpsData - 保存GPS位置信息:myid=1173
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:longitude=1.158388594E8,latitude=3.2886083599999998E7
+[TP-Processor3] DEBUG zack.map.logic.SaveGpsData - 保存GPS位置信息:insert into locate (userid,longitude,latitude,createtime,provider) values( 1173,1.158388594E8,3.2886083599999998E7,'20120620160607',2)
+[TP-Processor3] INFO zack.map.servlet.MapService - 通信成功，返回结果为:{"code":1}

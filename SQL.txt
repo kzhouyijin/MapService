@@ -1,0 +1,65 @@
+CREATE TABLE `user` (
+  `ID` int(10) NOT NULL AUTO_INCREMENT,
+  `MAC_ADDRESS` text,
+  `CREATE_TIME` text,
+  `LAST_TIME` text,
+  `PASSWORD` text,
+  `ACCOUNT` text,
+  `REALNAME` text,
+  `PHONE_NUMBER` text,
+  PRIMARY KEY (`ID`),
+  KEY `index_user_id` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5261 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT
+
+CREATE TABLE `track` (
+  `ID` int(20) NOT NULL auto_increment,
+  `OBSERVID` int(10) NOT NULL,
+  `USERID` int(10) NOT NULL,
+  `NAME` text NOT NULL COMMENT '备注名',
+  `ICON` text NOT NULL COMMENT '对应的图片ID',
+  `STATE` int(1) NOT NULL COMMENT '事件状态，1表示为活动的，0表示为已关闭',
+  `MESSAGE` text NOT NULL COMMENT '验证信息',
+  `ISACCEPT` int(1) NOT NULL COMMENT '好友状态,1表示为好友，0表示已拒绝',
+  PRIMARY KEY  (`ID`),
+  UNIQUE KEY `index_track_observid_userid` USING BTREE (`OBSERVID`,`USERID`),
+  KEY `foreign_track_userid` (`USERID`),
+  CONSTRAINT `foreign_track_userid` FOREIGN KEY (`USERID`) REFERENCES `user` (`ID`) ON DELETE CASCADE,
+  CONSTRAINT `foreign_track_observid` FOREIGN KEY (`OBSERVID`) REFERENCES `user` (`ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+CREATE TABLE `eventinfo` (
+  `ID` int(20) NOT NULL auto_increment,
+  `OBSERVID` int(10) NOT NULL,
+  `USERID` int(10) NOT NULL COMMENT '该事件的目标用户',
+  `EVENTCODE` int(4) NOT NULL COMMENT '标识事件种类的代码',
+  `CREATETIME` text,
+  `STATE` int(1) default NULL COMMENT '事件状态，1表示为活动的，0表示为关闭',
+  PRIMARY KEY  (`ID`),
+  KEY `index_eventinfo_observid` (`OBSERVID`),
+  KEY `index_eventinfo_userid` (`USERID`),
+  CONSTRAINT `foreign_eventinfo_userid` FOREIGN KEY (`USERID`) REFERENCES `user` (`ID`) ON DELETE CASCADE,
+  CONSTRAINT `foreign_eventinfo_observid` FOREIGN KEY (`OBSERVID`) REFERENCES `user` (`ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+
+CREATE TABLE `mapconfig` (
+  `id` int(10) NOT NULL auto_increment,
+  `configkey` text NOT NULL,
+  `configvalue` text NOT NULL,
+  `createtime` text NOT NULL,
+  `datatype` int(1) NOT NULL COMMENT '数据类型，0表示字符串，1表示int，2表示boolean类型',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+
+CREATE TABLE `locate` (
+  `ID` int(20) NOT NULL auto_increment,
+  `USERID` int(10) NOT NULL,
+  `LONGITUDE` int(10) NOT NULL COMMENT '经度',
+  `LATITUDE` int(10) NOT NULL COMMENT '纬度',
+  `CREATETIME` text NOT NULL,
+  `PROVIDER` int(1) NOT NULL COMMENT '定位类型，0表示GPS，1表示网络定位，2表示基站定位，3表示百度定位',
+  PRIMARY KEY  (`ID`),
+  KEY `index_locate_userid` (`USERID`),
+  CONSTRAINT `foreign_locate_userid` FOREIGN KEY (`USERID`) REFERENCES `user` (`ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;

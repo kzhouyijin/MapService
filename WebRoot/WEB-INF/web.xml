@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <servlet>  
+        <servlet-name>MapService</servlet-name>  
+        <servlet-class>zack.map.servlet.MapService</servlet-class>  
+    </servlet>  
+
+    <servlet-mapping>  
+        <servlet-name>MapService</servlet-name>  
+        <url-pattern>/service</url-pattern>  
+    </servlet-mapping> 
+    
+    <resource-ref>  
+    <description>DB Connection</description>  
+    <res-ref-name>jdbc/map</res-ref-name>  
+    <res-type>javax.sql.DataSource</res-type>  
+    <res-auth>Container</res-auth>  
+  </resource-ref>    
+</web-app>
